@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import { FaTrash } from 'react-icons/fa';
 import style from './TodoItem.module.css';
-
 /* eslint-disable */
 export default class TodoItem extends Component {
   render() {
@@ -11,16 +11,19 @@ export default class TodoItem extends Component {
       textDecoration: 'line-through',
     };
 
+    const handleEdit = () => {
+      console.log("first");
+    };
+
     const { completed, id, title } = this.props.todo;
     return (
       <>
         <li className={style.item}>
           <input className={style.checkbox} type="checkbox" checked={completed} onChange={() => this.props.handleChangeProps(id)} />
-          <span style={completed ? completedStyle : null}>
+          <span style={completed ? completedStyle : null} onDoubleClick={handleEdit}>
             {title}
-            {' '}
           </span>
-          <button onClick={() => this.props.delTodo(id)}>Delete</button>
+          <button className={style.trash} onClick={() => this.props.delTodo(id)}><FaTrash /></button>
         </li>
       </>
 
