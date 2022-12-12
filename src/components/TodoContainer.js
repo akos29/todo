@@ -1,21 +1,23 @@
 	import React from "react"
 	import TodoList from "./TodoList"
 	import Header from "./Header"
+	import InputTodo from "./InputTodo"
+	import { v4 as uuidv4 } from "uuid"
 	class TodoContainer extends React.Component {
 		state = {
 			todos:[
 				{
-						id: 1,
+						id: uuidv4(),
 						title: "Setup Development for Restaurant Development Environment",
 						completed: true
 				},
 				{
-						id: 2,
+						id: uuidv4(),
 						title: "Develop website with the provided colors",
 						completed: false
 				},
 				{
-						id: 3,
+						id: uuidv4(),
 						title: "Deploy to live server",
 						completed: false
 				},
@@ -48,9 +50,22 @@
 			})
 		};
 
+		const addTodoItem = title => {
+			const newTodo = {
+				id:uuidv4(),
+				title: title,
+				completed: false
+			};
+
+			this.setState({
+				todos: [...this.state.todos,newTodo]
+			});
+		};
+
 	return (
 			<>
 				<Header />
+				<InputTodo addTodo={addTodoItem} />
 				<TodoList todos={this.state.todos} handleChangeProps={handleChange} delTodo={delTodo} />
 			</>
 			
