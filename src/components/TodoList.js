@@ -6,7 +6,7 @@ export class TodList extends PureComponent {
     return (
       <div>
         <ul>{this.props.todos.map(todo => (
-            <TodoItem key={todo.id} todo= {todo} />
+            <TodoItem key={todo.id} todo= {todo} handleChangeProps ={this.props.handleChangeProps} delTodo={this.props.delTodo} />
         ))}
       </ul>
       </div>
