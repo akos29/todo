@@ -4,6 +4,9 @@ function Header() {
   const headerStyle = {
     padding: '20px 0',
     lineHeight: '1.5em',
+    backgroundColor: '#f7c210',
+    color: '#000',
+    width: '100%',
   };
 
   return (

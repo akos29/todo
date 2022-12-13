@@ -16,7 +16,14 @@ const Navbar = () => {
 
   return (
     <nav className="navBar">
-      <button type="button" onClick={toggleNav}>{navbarOpen ? <MdClose style={{ color: '#fff', width: '40px', height: '40px' }} /> : <FiMenu style={{ color: '#7b7b7b', width: '40px', height: '40px' }} />}</button>
+      <button type="button" onClick={toggleNav}>
+        {navbarOpen ? <MdClose style={{ color: '#000', width: '40px', height: '40px' }} /> : (
+          <FiMenu style={{
+            color: '#000', backgroundColor: 'transparent', width: '40px', height: '40px',
+          }}
+          />
+        )}
+      </button>
       <ul className={`menuNav ${navbarOpen ? 'showMenu' : ''}`}>
         <li><NavLink to="/" activeClassName="active-link" onClick={() => closeMenu()} exact> Home </NavLink></li>
         <li><NavLink to="about" activeClassName="active-link" onClick={() => closeMenu()} exact> About </NavLink></li>

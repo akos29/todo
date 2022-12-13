@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease-out;
+  font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+  --primary:#f7c210;
+  --secondary: #000;
+  --bg-color:#595959;
+  --gray:#ececec;
 }
 
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.4;
-  color: #444;
-  background: #fff;
+  color: var(--secondary);
+  background: var(--gray);
   height: 100vh;
+}
+
+header {
+  width: 100%;
 }
 
 .container {
@@ -23,13 +37,27 @@ body {
 
 h1 {
   font-size: 6rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2rem;
   line-height: 1em;
-  color: #ececec;
-  text-transform: lowercase;
+  text-transform: capitalize;
   text-align: center;
 }
+p {
+  font-size: 1.15rem;
+  line-height: 2.35rem;
+  padding: .75rem 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 1em;
+  line-height: 1em;
+  text-transform: capitalize;
+  text-align: left;
+}
+
 
 ul {
   width: 100%;
@@ -42,11 +70,12 @@ ul {
 
 .form-container {
   width: 100%;
-  margin-bottom: 20px;
+  margin: 20px 0;
   display: flex;
   border-radius: calc(0.5 * 100px);
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
   justify-content: space-evenly;
+  background-color: white;
 }
 
 .input-text {
@@ -64,7 +93,7 @@ ul {
 
 .input-submit {
   background: transparent;
-  color: #5b5b5b;
+  color: var(--secondary);
   text-transform: capitalize;
   cursor: pointer;
   font-weight: 600;
@@ -79,7 +108,7 @@ ul {
 }
 
 .input-submit svg {
-  color: darkcyan;
+  color: var(--primary);
   font-size: 20px;
   margin-top: 2px;
 }
@@ -96,6 +125,7 @@ ul {
   top: 40px;
   z-index: 10;
   cursor: pointer;
+  background: var(--primary);
 }
 
 .menuNav {
@@ -103,7 +133,7 @@ ul {
   list-style: none;
   position: fixed;
   top: 0;
-  background: darkcyan;
+  background: var(--primary);
   left: 0;
   bottom: 0;
   height: 100vh;
@@ -111,6 +141,20 @@ ul {
   overflow: hidden;
   max-width: 290px;
   z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+@-webkit-keyframes run {
+  0% {
+    left:0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left:0;
+  }
 }
 
 .menuNav.showMenu {
@@ -118,12 +162,13 @@ ul {
 }
 
 a {
-  display: block;
+  display: flex;
   padding: 10px 40px;
   text-decoration: none;
-  color: #3fffd2;
+  color: var(--secondary);
   text-transform: uppercase;
   font-weight: bold;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .menuNav li:first-child {
