@@ -9,10 +9,10 @@
 }
 
 :root {
-  --primary:#f7c210;
+  --primary: #f7c210;
   --secondary: #000;
-  --bg-color:#595959;
-  --gray:#ececec;
+  --bg-color: #595959;
+  --gray: #ececec;
 }
 
 body {
@@ -43,10 +43,11 @@ h1 {
   text-transform: capitalize;
   text-align: center;
 }
+
 p {
   font-size: 1.15rem;
   line-height: 2.35rem;
-  padding: .75rem 0;
+  padding: 0.75rem 0;
 }
 
 h2 {
@@ -57,7 +58,6 @@ h2 {
   text-transform: capitalize;
   text-align: left;
 }
-
 
 ul {
   width: 100%;
@@ -142,18 +142,19 @@ ul {
   max-width: 290px;
   z-index: 9;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
 }
 
 @-webkit-keyframes run {
   0% {
-    left:0;
+    left: 0;
   }
+
   50% {
     left: 100%;
   }
+
   100% {
-    left:0;
+    left: 0;
   }
 }
 
@@ -168,7 +169,7 @@ a {
   color: var(--secondary);
   text-transform: uppercase;
   font-weight: bold;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .menuNav li:first-child {
