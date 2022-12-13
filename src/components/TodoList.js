@@ -4,13 +4,13 @@ import TodoItem from './TodoItem';
 
 const TodoList = (props) => {
   return (
-    <div>
+    <>
       <ul>
         {props.todos.map((todo) => (
-          <TodoItem key={todo.id} todo={todo} handleChangeProps={props.handleChangeProps} delTodo={props.delTodo} />
+          <TodoItem key={todo.id} todo={todo} handleChangeProps={props.handleChangeProps} delTodo={props.delTodo} setUpdate={props.setUpdate} />
         ))}
       </ul>
-    </div>
+    </>
   );
 }
     
