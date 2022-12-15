@@ -25,8 +25,8 @@ const Navbar = () => {
         )}
       </button>
       <ul className={`menuNav ${navbarOpen ? 'showMenu' : ''}`}>
-        <li><NavLink to="/" activeClassName="active-link" onClick={() => closeMenu()} exact> Home </NavLink></li>
-        <li><NavLink to="about" activeClassName="active-link" onClick={() => closeMenu()} exact> About </NavLink></li>
+        <li><NavLink to="/todo/" activeClassName="active-link" onClick={() => closeMenu()} exact> Home </NavLink></li>
+        <li><NavLink to="/todo/about" activeClassName="active-link" onClick={() => closeMenu()} exact> About </NavLink></li>
       </ul>
     </nav>
   );

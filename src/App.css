@@ -194,7 +194,7 @@ a {
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    margin: 0 5em;
+    margin: 5em auto;
   }
 
   .menuNav.showMenu {
