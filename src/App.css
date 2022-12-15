@@ -24,6 +24,7 @@ body {
 
 header {
   width: 100%;
+  padding: 0.5em 2em;
 }
 
 .container {
@@ -32,13 +33,13 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 2em;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1em;
   text-transform: capitalize;
   text-align: center;
@@ -51,7 +52,7 @@ p {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-top: 1em;
   line-height: 1em;
@@ -122,7 +123,7 @@ ul {
 .navBar button {
   position: fixed;
   left: 40px;
-  top: 40px;
+  top: 20px;
   z-index: 10;
   cursor: pointer;
   background: var(--primary);
@@ -139,7 +140,7 @@ ul {
   height: 100vh;
   width: 0;
   overflow: hidden;
-  max-width: 290px;
+  max-width: 100%;
   z-index: 9;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -174,4 +175,33 @@ a {
 
 .menuNav li:first-child {
   margin-top: 7rem;
+}
+
+@media (min-width: 481px) {
+  h1 {
+    font-size: 5em;
+    padding-left: 0.5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    padding-left: 0.5em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 5em;
+  }
+
+  .menuNav.showMenu {
+    width: 50%;
+  }
+
+  .navBar button {
+    left: 40px;
+  }
 }

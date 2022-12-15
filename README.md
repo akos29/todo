@@ -1,33 +1,9 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <img src="https://raw.githubusercontent.com/krisbobo/readme-template/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
 </div>
 
@@ -35,36 +11,39 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[Micro Cinema\] ](#-micro-cinema-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Todo App with React<a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> The Todo software is designed to help users manage their to-do lists. The app is designed primarily using React.
+The application is carried out as part of a test to see how well the React tutorial has been understood.
 
 ## 🛠 Built With <a name="built-with"></a>
-
+- React
+- JSX
+- ES6
+- Webpack
+<!-- Features -->
 ### Tech Stack <a name="tech-stack"></a>
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
@@ -76,19 +55,6 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
@@ -96,11 +62,11 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Managing Tasks**
+- **Routing on SPA**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- LIVE DEMO -->
 
@@ -108,171 +74,130 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://akos29.github.io/todo)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> In order to run this project you need:
 
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Node js installed on your computer
+- Npm Node package manager
+- Terminal
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
+> https://github.com/krisbobo/js-capstone.git
 ### Install
 
 Install this project with:
+```sh
+ npm install
+```
 
-<!--
 Example command:
 
 ```sh
   cd my-project
   gem install
 ```
---->
+-
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
+
 Example command:
 
 ```sh
-  rails server
+ npm run test
 ```
---->
+-
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
+
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+ npm test
 ```
---->
+-
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
+
 Example:
 
 ```sh
-
+npm run deploy
 ```
- -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Kibrewossen Yitbarek**
 
-👤 **Author1**
+- GitHub: [akos](https://github.com/akos29)
+- Twitter: [kbson49](https://twitter.com/Kbson49)
+- LinkedIn: [Kibrewossen](https://www.linkedin.com/in/kibrewossen-yitbarek-bb587a18/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome.
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+If you like this project, don't forget give a ⭐️ or buy me a coffee ☕️
 
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank all my collaborators on this project and the Microverse student community.
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+> Two possible questions new developers would ask when they decide to use this project.
 
-- **[Question_1]**
+- **[Why not use inline styling?]**
 
-  - [Answer_1]
+  - [This is because it gets more difficult to edit styles when it is inline. Also, CSS best practices warrants for an external stylesheet to be used.]
 
-- **[Question_2]**
+- **[Why did you include the workflow and linters?]**
 
-  - [Answer_2]
+  - [This is to ensure that the codebase remains consistent at all times(wrt spacings and other general rules set)]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
 
 <!-- LICENSE -->
 
@@ -280,6 +205,4 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">[<a href="#readme-top">Back to Top</a>]</p>
