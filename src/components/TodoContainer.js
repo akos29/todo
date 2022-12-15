@@ -74,14 +74,14 @@ const TodoContainer = () =>{
       <Navbar />
       <Header /><div className='container'>
       <Routes >
-        <Route exact path='/todo' element = {
+        <Route exact path='/' element = {
           <>
               <InputTodo addTodo={addTodoItem} />
               <TodoList todos={todos} handleChangeProps={handleChange} delTodo={delTodo} setUpdate={setUpdate} />
           </>
         }>
         </Route>
-        <Route path='/todo/about' element={ <About />}>
+        <Route path='/about' element={ <About />}>
           
         </Route>
         <Route path='*' element={ <NoMatch />}>
