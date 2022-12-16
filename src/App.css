@@ -1,38 +1,207 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease-out;
+  font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+  --primary: #f7c210;
+  --secondary: #000;
+  --bg-color: #595959;
+  --gray: #ececec;
+}
+
+body {
+  line-height: 1.4;
+  color: var(--secondary);
+  background: var(--gray);
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 0.5em 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 2em;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1em;
+  text-transform: capitalize;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 1.15rem;
+  line-height: 2.35rem;
+  padding: 0.75rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 1em;
+  line-height: 1em;
+  text-transform: capitalize;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  width: 100%;
+}
+
+.inner {
+  width: 100%;
+  padding: 8rem 10px 4rem;
+}
+
+.form-container {
+  width: 100%;
+  margin: 20px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  justify-content: space-evenly;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: var(--secondary);
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.input-submit svg {
+  color: var(--primary);
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+/* sidebar Nav */
+
+.navBar {
+  position: relative;
+}
+
+.navBar button {
+  position: fixed;
+  left: 40px;
+  top: 20px;
+  z-index: 10;
+  cursor: pointer;
+  background: var(--primary);
+}
+
+.menuNav {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  background: var(--primary);
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  max-width: 100%;
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.menuNav.showMenu {
+  width: 100%;
+}
+
+a {
+  display: flex;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.menuNav li:first-child {
+  margin-top: 7rem;
+}
+
+@media (min-width: 481px) {
+  h1 {
+    font-size: 5em;
+    padding-left: 0.5em;
+  }
+
+  h2 {
+    font-size: 3em;
+    padding-left: 0.5em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 5em auto;
+  }
+
+  .menuNav.showMenu {
+    width: 50%;
+  }
+
+  .navBar button {
+    left: 40px;
   }
 }
