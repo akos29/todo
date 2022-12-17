@@ -1,12 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <img src="https://raw.githubusercontent.com/krisbobo/readme-template/master/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -92,7 +86,7 @@ The application is carried out as part of a test to see how well t
 
 Clone this repository to your desired folder:
 
-> https://github.com/krisbobo/js-capstone.git
+> https://github.com/akos29/todo/
 ### Install
 
 Install this project with:
