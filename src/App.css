@@ -27,6 +27,13 @@ header {
   padding: 0.5em 2em;
 }
 
+footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: #595959;
+  color: var(--primary);
+}
+
 .container {
   display: flex;
   flex-direction: column;

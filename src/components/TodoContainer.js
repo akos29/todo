@@ -89,8 +89,8 @@ const TodoContainer = () =>{
           
         </Route>
       </Routes>
+      </div> 
       <Footer />
-      </div>
     </>
   
     );
