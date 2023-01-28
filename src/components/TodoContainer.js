@@ -8,6 +8,7 @@ import InputTodo from './InputTodo';
 import About from '../pages/About';
 import NoMatch from '../pages/NoMatch';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const TodoContainer = () =>{
   function getInitialTodos() {
@@ -88,6 +89,7 @@ const TodoContainer = () =>{
           
         </Route>
       </Routes>
+      <Footer />
       </div>
     </>
   
